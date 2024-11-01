@@ -1,0 +1,76 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+  <link rel="stylesheet" type="text/css" href="formulario.css">
+
+  </head>
+
+
+<body>  
+  <script src="index.js"></script>
+
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <h1>Formulario de envío</h1>
+        <h3>Completa tus datos correctamente para que podamos llevarte tu pedido</h3>
+
+
+          <form action="javascript:alert('Su pedido fue enviado');">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre Completo
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefono" class="colocar_telefono">Teléfono
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" required="obligatorio" placeholder="Escribe tu teléfono">
+                </p>    
+              
+                <p>
+                  <label for="Dirección" class="colocar_direccion">Dirección
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="Dirección" id="direc" required="obligatorio" placeholder="Escribe tu dirección">
+                </p>    
+              
+                <p>
+                  <label for="casa" class="colocar_ncasa">Número de casa
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="numcasa" id="ncasa" required="obligatorio" placeholder="Escribe tu número de casa">
+                </p>    
+              
+                <p>
+                  <label for="referencia" class="colocar_mensaje">Referencia
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                  <textarea name="introducir_referencia" class="texto_referencia" id="ref" required="obligatorio" placeholder="Escribe la referencia de tu dirección..."></textarea> 
+                </p>                    
+              
+                  <button type="submit"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>Los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+
+</body>
+</html>
